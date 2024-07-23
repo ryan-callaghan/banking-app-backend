@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Account List</title>
+</head>
+<body>
+    <h1>Account List</h1>
+    <ul>
+        <li th:each="account : ${accounts}">
+            <span th:text="${account.accountType}"></span>: <span th:text="${account.balance}"></span>
+        </li>
+    </ul>
+</body>
+</html>
